@@ -23,6 +23,12 @@ function reducer(state, action){
     case "ADD_FAV":
       return {...state, favs : [...state.favs, action.payload] };
 
+    case "DELETE_FAV":
+      return {...state, favs: action.payload};
+
+    case "ELIMINAR_FAVORITOS":
+        return {...state, favs: []};
+
 
     case "SWITCH THEME":
       return {...state, theme: !state.theme};
