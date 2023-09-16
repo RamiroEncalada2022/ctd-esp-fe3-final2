@@ -7,10 +7,12 @@ import { useContextGlobal } from "./utils/global.context";
 
 const Card = ({ dentista }) => {
 
-  const {dispatch} = useContextGlobal()
+  const {state, dispatch} = useContextGlobal()
 
   const addFav = ()=>{
+    const findFav = state.favs.find(fav => fav.id = dentista.id)
     // Aqui iria la logica para agregar la Card en el localStorage
+    const finDentist=
     dispatch({type: "ADD_FAV", payload: dentista})
 
     
@@ -32,7 +34,7 @@ const Card = ({ dentista }) => {
         {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
 
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
-        <button onClick={addFav} className="favButton"><img src="/images/favorito.png" alt="doctor" width={' 20px'}  /> </button>
+        <button onClick={addFav} className="favButton">"⭐🌟"</button>
     </div>
   );
 };
