@@ -1,6 +1,5 @@
 import React from "react";
 import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Routes/Home"
 import Contact from "./Routes/Contact"
@@ -8,6 +7,7 @@ import Detail from "./Routes/Detail"
 import Favs from "./Routes/Favs"
 import "./index.css";
 import { useContextGlobal } from "./Components/utils/global.context";
+import Header from "./Components/Header";
 
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
 
     
       <div className="App" style={{backgroundColor: !state.theme && 'grey' }} >
-          <Navbar/>
+          <Header/>
 
           <Routes>
             

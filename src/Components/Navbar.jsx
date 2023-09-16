@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useContextGlobal } from './utils/global.context'
 
+
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Navbar = () => {
@@ -9,9 +10,9 @@ const Navbar = () => {
   const {dispatch} =useContextGlobal();
 
   return (
-    <nav>
+    <nav className='nav'>
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
-      <h1>DH Odonto</h1>
+      
 
       <Link to="/">Home</Link>
       <Link to="/Contacto">Contacto</Link>
@@ -25,7 +26,9 @@ const Navbar = () => {
       
       
      
-      <button onClick={()=>dispatch({type: "SWITCH THEME"})} >change Theme</button>
+      <button onClick={()=>dispatch({type: "SWITCH THEME"})}>
+        <img src="/images/luna.png" alt="theme" width={' 50px'}/>
+      </button>
     </nav>
   )
 }

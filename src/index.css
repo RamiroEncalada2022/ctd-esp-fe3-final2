@@ -23,7 +23,7 @@ h1{
   text-align: center;
 }
 
-nav{
+.nav{
   display: flex;
   width: 80vw;
   justify-content: flex-start;
@@ -55,10 +55,12 @@ footer {
 footer > img{
   width: 200px;
   margin: 0;
+  background-color: #000;
 }
 footer > p{
   margin: 0;
   padding-top: 0.7rem;
+  background-color: #000;
 }
 
 form{
@@ -78,6 +80,7 @@ form{
   width: 200px;
   padding: 0.5rem 0.5rem 0 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
+  background-color: beige;
 }
 
 .card:hover{
@@ -119,4 +122,12 @@ tr:nth-child(even) {
 }
 .dark > a {
   color: white;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  /*background: #ff5733;*/
 }

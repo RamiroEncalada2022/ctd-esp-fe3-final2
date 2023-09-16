@@ -5,12 +5,20 @@ import Form from '../Components/Form'
 
 const Contact = () => {
   return (
-    <div>
+    <div style={{display:"flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
 
-      <h1>Prueba</h1>
+      
       <h2>Want to know more?</h2>
       <p>Send us your questions and we will contact you</p>
+      <br />
+      <br />
+      <br />
       <Form/>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
   )
 }

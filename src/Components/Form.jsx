@@ -39,13 +39,17 @@ const Form = () => {
 
   return (
     <div>
-      <form onSubmit={onSubmitForm}>
+      <form onSubmit={onSubmitForm} className="form">
       
       <label>Ingresa tu nombre y apellido</label>
       <input type="text" onChange={(event) => setUsuario({...usuario, nombreCompleto: event.target.value})}/>
+      <br />
+
       
       <label>Ingresa tu email</label>
       <input type="text" onChange={(event) => setUsuario({...usuario, email: event.target.value})}/>
+      <br />
+      <br />
       
       <button type='submit'>Enviar</button>
         {enviado && <h3 style={{color: 'red'}}> Gracias {usuario.nombreCompleto}, te contactaremos cuando antes vía mail</h3> }
